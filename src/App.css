@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,800&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin: 0 auto;
+  height: 72px;
+  align-items: center;
+}
+ul{
+  display:flex;
+  gap: 24px;
+  align-items: center;
+}
+ul li{
+  list-style: none;
+}
+nav button{
+  all: unset;
+  background-color: var(--red);
+  padding: 6px 16px;
+  height: 32px;
+  color: white;
+  font-weight: 500;
+}
+nav button:hover{
+  background-color: var(--dark-red);
+}
+img.menu{
+  display: none;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  height: calc(100vh-72px);
+}
+.hero-content {
+  flex-direction: column;
+  gap: 36px !important;
+}
+.hero-content h1{
+  line-height: 102px;
+  font-size: 108px;
+  font-weight: 800;
+
+}
+.hero-content p{
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+  font-weight: 500;
+  max-width: 404px;
+}
+.hero-button{
+  display: flex;
+  gap: 40px;
+}
+.hero-button button{
+  all: unset;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 6px 16px;
+  line-height: 29px;
+}
+.hero-button button:first-child{
+  background-color: var(--red);
+  color: white;
+}
+.hero-button button:first-child:hover{
+  background-color: var(--dark-red);
+}
+.hero-button button:last-child{
+  border: 1px solid black;
+  background-color: transparent;
+}
+.hero-button button:last-child:hover{
+  background-color: black;
+  color: white;
+}
+.shopping p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.brand-icons{
+  display: flex;
+  gap: 16px;
+}
+.brand-icons img{
+  height: 32px;
+  width: 32px;
+} 
+@media screen and
+(max-width:1200px) {
+  .container{
+    width: auto;
+    margin: 0 auto;
+    margin-left: 4%;
+  }
+  .hero-button button{
+    font-size: 18px;
+  }
+  .hero-content h1{
+    line-height: 72px;
+    font-size: 72px; 
+    max-width: 500px;
+  } 
+  .hero-img img{
+    width: 400px;
+  }  
+  }
+  
+@media screen and
+(max-width:800px) {
+  .hero-content{
+    margin: 0 4%;
+  }
+  .hero{
+    flex-direction: column-reverse;
+   margin: 0 auto;
+  }
+  nav{
+    padding: 20px;
+  }
+  nav ul{
+    position: absolute;
+    right: 0;
+    top: 70px;
+    padding: 20px;
+    background-color: white;
+    color: var((--gray));
+    flex-direction: column;
+    display: none;
+
+  }
+  nav button{
+    display: none;
+  }
+  img.menu{
+    display: block;
+    height: 32px;
+    width: 32px;
+  }
+  .hero-content h1{
+    line-height: 64px;
+    font-size: 64px; 
+    max-width: 600px;
+  } 
+  
+}
